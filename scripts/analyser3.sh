@@ -4,7 +4,7 @@ var18=0
 var17=0
 for file in $(ls $1)
 do
-   for info in $(cat $1/$file)
+   for info in $(cat $1$file)
    do
       age=$(echo $info | cut -d ":" -f2)
       
